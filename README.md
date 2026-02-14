@@ -80,12 +80,12 @@ zbudowany zostanie obraz aplikacji,
 uruchomiona zostanie baza PostgreSQL,
 a Flyway automatycznie wykona migracje.
 
-### 4️⃣ Dostęp do API
+### 4️⃣ Dostęp do API i testowanie
+W Postmanie: 
+
 http://localhost:8080
 
 Przykładowe endpointy:
-
-🔐 Autoryzacja
 
 Rejestracja użytkownika
 POST /api/auth/register
@@ -93,7 +93,7 @@ POST /api/auth/register
 Body:
 
 {
-  "username": "test",
+  "username": "test@test.test",
   "password": "password123"
 }
 
@@ -104,4 +104,6 @@ POST /api/auth/login
 Po zalogowaniu zwracany jest token JWT, który należy dodawać do nagłówka:
 
 Authorization: Bearer TOKEN
+
+Następnie można testować działanie na taskach i userach przy pomocy dostępnych endpointów.
 
