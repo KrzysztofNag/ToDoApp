@@ -88,18 +88,19 @@ http://localhost:8080
 Przykładowe endpointy:
 
 Rejestracja użytkownika
-POST /api/auth/register
+POST /auth/register
 
 Body:
 
 {
   "username": "test@test.test",
+  
   "password": "password123"
 }
 
 Logowanie
 
-POST /api/auth/login
+POST /auth/login
 
 Po zalogowaniu zwracany jest token JWT, który należy dodawać do nagłówka:
 
