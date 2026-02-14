@@ -90,15 +90,15 @@ Przykładowe endpointy:
 Rejestracja użytkownika
 POST /auth/register
 
-Body:
+Body (JSON):
 
-{
+    {
 
     "email": "test@test.test",
   
     "password": "password123"
   
-}
+    }
 
 Logowanie
 POST /auth/login
